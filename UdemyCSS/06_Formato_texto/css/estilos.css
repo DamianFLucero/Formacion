@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    color: #ef4767;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da; /*eje X  eje Y  difuminado  color*/
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-decoration: overline underline;
+}
+
+.caja{
+    padding: 15px;
+    margin: auto;
+    width: 70%;
+    background-color: #219ebc;
+    border-radius: 5px;
+    color: white;
+}
+
+.texto{
+    text-align: justify;
+    /*direction: rtl;  dirección left to right*/
+    text-indent: 30px; /*Identación*/
+    line-height: 3; /*Espacio entre lineas, proporcional al tipo de fuente*/
+    white-space: normal; /*Encierra el texto en la caja*/
+    text-shadow: 1px 1px 2px #ced4da;
+}

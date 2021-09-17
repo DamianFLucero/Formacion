@@ -1,0 +1,16 @@
+h1{
+    color: darkmagenta;
+    text-align: center;
+}
+
+a:link, a:visited{
+    background-color: darkviolet;
+    color:white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    background-color: darkorchid;
+}

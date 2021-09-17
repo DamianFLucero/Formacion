@@ -1,0 +1,38 @@
+Ejecutá consultas SQL para dar respuesta a los siguientes items:
+
+1 - Lista las asignaturas del tipo "optativa".
+
+R:
+select * from asignatura
+where tipo='optativa'
+
+#################################################################################################################
+
+2 - Lista los nombres de Departamento de la Universidad.
+
+R:
+select nombre from departamento
+order by nombre
+
+#################################################################################################################
+
+3 - Listar apellidos y nombre de las Personas, convirtiendo ambos elementos a mayúsculas
+
+R:
+select upper(nombre),upper(apellido1),upper(apellido2) from persona order by nombre
+
+#################################################################################################################
+
+4 - Listar  apellidos y nombres de Profesores mayores a 40 años en la Universidad.
+
+R:
+select upper(nombre),upper(apellido1),upper(apellido2) from persona
+where tipo='profesor' and fecha_nacimiento<'1980-08-10'
+
+
+
+
+
+
+
+

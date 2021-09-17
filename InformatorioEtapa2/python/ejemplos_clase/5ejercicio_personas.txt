@@ -1,0 +1,6 @@
+cargar una lista con el nonbre, sexo y edad de todo el curso
+
+a) mostrar la lista de asistencia ordenada por nombre
+b) mostrar el nombre del alumno de mayor y menor edad
+c) mostrar el promedio de edad del curso
+d) mostrar el promediode edad del sexo femenino y masculino

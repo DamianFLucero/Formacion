@@ -1,0 +1,17 @@
+body{
+    background-color: gold;
+    color: cornsilk;
+    background-image: url("/Leccion05/IMG/3861246.jpg");
+    background-repeat: no-repeat;/*repetir en eje x o y o no repetir*/
+    background-position: right top;/*donde se ubica la imagen con zoom*/
+    background-attachment: fixed;/*el scroll no sigue a la imagen*/
+    
+    /* Simplificado (salvo attachment):
+    background: gold url("/Leccion05/IMG/3861246.jpg") no-repeat right top;*/
+}
+
+h1{
+    color: black;
+    text-align: center;
+    background-color: gold;
+}

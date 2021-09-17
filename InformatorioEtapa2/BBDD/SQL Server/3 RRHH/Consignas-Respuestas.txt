@@ -1,0 +1,31 @@
+Ejecutá consultas SQL que permita dar respuestas a:
+
+1- En base a la tabla EMPLOYEES, listar datos de quienes tengan un sueldo mayor a 10000.
+
+R:
+select * from empleado
+where sueldo > 10000 order by sueldo
+
+
+####################################################################################################################
+
+2- En base a la tabla EMPLOYEES, contar cuántas personas, al aplicar un aumento de 5%, su sueldo supere los 15000.
+
+R:
+select * from empleado
+where sueldo*1.05 > 15000 order by sueldo
+
+####################################################################################################################
+
+3- Listar los nombres de todos los departamentos.
+
+R:
+select nombre as departamento from departamento order by nombre
+
+####################################################################################################################
+
+4- Listar la cantidad de personas de la tabla EMPLOYEES, que tengan el cargo de Programador. Y cuantas de estas personas superen el sueldo mínimo en esa categoría.
+
+R:
+select count(idempleado) as Programadores,count(sueldo) as SobreSueldoMinimo from empleado
+where idcargo = 'C07' and sueldo > 2500

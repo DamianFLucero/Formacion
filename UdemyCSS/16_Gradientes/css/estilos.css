@@ -1,0 +1,41 @@
+html{
+    height: auto;
+    min-height: 100%;
+}
+
+body{
+    /*
+    Gradiente desde arriba hacia abajo:
+    background: linear-gradient(#f72585,#3a0ca3);
+    
+    Gradiente desde izquierda a derecha:
+    background: linear-gradient(to right, #f72585,#3a0ca3);
+    
+    Gradiente de tres colores:
+    background: linear-gradient(#24404d,#6dbff1, black);
+
+    Gradiente diagonal:
+    background: linear-gradient(to bottom right, #f72585,#3a0ca3);
+
+    Gradiente con grados de inclinación:
+    background: linear-gradient(115deg, #f72585,#3a0ca3);*/
+
+    background: radial-gradient(circle, #f72585,#3a0ca3);
+    }
+
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+img.imagen{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}

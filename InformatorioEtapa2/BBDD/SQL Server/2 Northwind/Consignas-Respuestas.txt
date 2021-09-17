@@ -1,0 +1,87 @@
+Ejecutá consultas SQL que permita dar respuestas a:
+
+1. Una lista de los nombres y apellidos de la tabla de EMPLOYEES:
+
+R:
+select LastName,FirstName from employees order by LastName
+
+#################################################################################################################
+
+2. Una lista de todos los nombres de las ciudades que aparecen en la tabla de EMPLOYEES. No mostrar 2 veces un mismo nombre de ciudad.
+
+R:
+select distinct City from Employees order by City
+
+#################################################################################################################
+
+3. Una lista de los nombres de productos y precios unitarios de la tabla PRODUCTS.
+
+R:
+select ProductName,UnitPrice from Products order by ProductName
+
+#################################################################################################################
+
+4. En la tabla EMPLOYEES: una lista de los detalles completos de quienes viven en EE.UU.
+
+R:
+select * from Employees
+where Country = 'USA'
+
+#################################################################################################################
+
+5. A partir de la tabla ORDERS, listar todos los pedidos que tienen un gasto de envio > 50.
+
+R:
+select * from Orders
+where Freight>50 order by Freight
+
+#################################################################################################################
+
+6. De la tabla de CUSTOMERS: listar nombre de la empresa de clientes donde el cargo es igual a Owner.
+
+R:
+select CompanyName from Customers
+where ContactTitle = 'Owner' order by CompanyName
+
+#################################################################################################################
+
+7. A partir de la tabla CUSTOMERS una lista de clientes cuyo nombre comienza con la letra "A”.
+
+R:
+select ContactName from Customers
+where ContactName like 'A%'
+
+#################################################################################################################
+
+8. Una lista de los nombres de clientes donde la región no está en blanco.
+
+R:
+select ContactName from Customers 
+where Region is not NULL order by ContactName
+
+#################################################################################################################
+
+9. Una lista de todos los productos, ordenado por precio unitario (el más barato primero).
+
+R:
+select ProductName,UnitPrice from Products order by UnitPrice 
+
+#################################################################################################################
+
+10. Una lista de todos los productos, ordenado por precio unitario (el más caro primero).
+
+R:
+select ProductName,UnitPrice from Products order by UnitPrice desc
+
+#################################################################################################################
+
+11. El número total de registros de la tabla EMPLOYEES. Nombre de la columna de salida "TotalEmpleados".
+
+R:
+select count(EmployeeID) As TotalEmpleados from Employees 
+
+#################################################################################################################
+
+12. De la tabla de pedidos, el gasto de envío promedio y el máximo gasto de envío.
+
+R:select avg(Freight) As GastoEnvioPromedio, max(Freight) As GastoEnvioMáximo from orders
